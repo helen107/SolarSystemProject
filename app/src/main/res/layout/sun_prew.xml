@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sun_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/obj_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="@font/roboto_light"
+        android:text="СОЛНЦЕ"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <TextView
+        android:id="@+id/obj_type_e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="170dp"
+        android:fontFamily="@font/gothic_a1"
+        android:text="звезда"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obj_name" />
+
+    <WebView
+        android:id="@+id/sun_gif"
+        android:layout_width="800dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="1dp"
+        android:foreground="@drawable/sun_solo"
+        android:foregroundGravity="fill_horizontal|top|left|bottom|center_vertical|center|fill_vertical"
+        android:scrollbarTrackHorizontal="@drawable/sun_solo"
+        android:scrollbarTrackVertical="@drawable/sun_solo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/obj_type_e">
+
+    </WebView>
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="101dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sun_gif"
+        app:srcCompat="@drawable/vector_21" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

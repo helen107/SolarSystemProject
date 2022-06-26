@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/scrollPanelMain"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                app:srcCompat="@drawable/header" />
+
+            <ImageButton
+                android:id="@+id/sun_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/sun" />
+
+            <ImageButton
+                android:id="@+id/mercury_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/mercury_main" />
+
+            <ImageButton
+                android:id="@+id/venus_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/venus_main" />
+
+            <ImageButton
+                android:id="@+id/earth_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/earth_main" />
+
+            <ImageButton
+                android:id="@+id/moon_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/moon_main" />
+
+            <ImageButton
+                android:id="@+id/mars_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/mars_main" />
+
+            <ImageButton
+                android:id="@+id/jupiter_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/jupiter_main" />
+
+            <ImageButton
+                android:id="@+id/saturn_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/saturn_main" />
+
+            <ImageButton
+                android:id="@+id/uranus_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/uranus_main" />
+
+            <ImageButton
+                android:id="@+id/neptune_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                app:srcCompat="@drawable/neptune_main" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
